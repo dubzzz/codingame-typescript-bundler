@@ -1,0 +1,40 @@
+{
+  "name": "CodinGame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "tsc",
+    "test": "jest",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^23.1.0",
+    "@types/node": "^10.3.3",
+    "jest": "^23.1.0",
+    "ts-jest": "^22.4.6",
+    "ts-node": "^6.1.1",
+    "typescript": "^2.9.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.jest.json"
+      }
+    },
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/specs/**/*.+(ts|tsx|js)"
+    ]
+  }
+}
